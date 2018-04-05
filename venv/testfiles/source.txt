@@ -1,0 +1,62 @@
+SURESH K S
+
+Phone: Address:
+Email:
+
+9481188479
+Tippeswamy nilaya 2nd cross jaya nagar shivamogga-577201
+sureshk.mca17@rvce.edu.in
+
+EDUCATION
+Swamy Vivekananda English High School, Shivamogga
+SSLC
+with percentage of 79.36%
+DVS Composite Pre-University College, Shivamogga.
+PUC
+with percentage of 65%
+D.V.S. College of Arts and Science, Shivamogga.
+Bachelor of Computer Applications
+with percentage of 88.58%
+R V College of Engineering, Mysore Road, Bangalore
+Master of Computer Applications
+MCA 3rd sem CGPA - 7.21 / 10
+
+2012 2012 to 2014 2014 to 2017 september 2017 - present
+
+TECHNICAL SKILLS
+Programming Languages
+JAVA, C, C++, Python, SQL, HTML, XHTML, CSS, JavaScript
+
+Softwares
+Android Studio IDE, DreamWeaver, MS Visual Studio, Oracle 10G
+
+Operating Systems
+Windows , Ubuntu
+
+PROJECTS
+
+EduConnect
+
+2016
+
+BCA Project Team size : 4 Role : Front end and back end development Description : A Educational institute finding web portal which allows to accept give results based on user specifications. Developed using PHP, JavaScript , HTML and CSS.
+
+Net Banking
+
+2018
+
+MCA Project Team Size : 3 Role : Front end Back end development Description : An online banking web portal developed using the NoSQL Database- MongoDB and php scripts as the bridge between front and back ends.
+
+Created using Resumonk - Online Resume Builder
+
+Efficient Data Extraction Technique For Kannada Text Documents
+MCA Project Team Size : 2 Role : Developing back end for efficient ranking and searching of documents Description : An effective search engine for retrieving kannada documents from corpus.
+ACHIEVEMENTS AND EXTRACURRICULAR ACTIVITIES
+Participated in village level NSS camp at Belluru (Hosanagara tlk) and Hosagunda (Sagara tlk) for two consecutive years.
+Secured 3rd rank in the BCA course for the Kuvempu university in the year 2017
+
+2018
+
+Created using Resumonk - Online Resume Builder
+
+

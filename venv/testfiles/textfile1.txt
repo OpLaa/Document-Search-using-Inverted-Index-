@@ -1,0 +1,117 @@
+DATA COMMUNICATION
+1MARK QUESTIONS
+CHAPTER-1: INTRODUCTION
+1.	Define Half Duplex.
+In Half-Duplex each station can both transmit and receive but not at the same time. When one device is sending, other can only receive, and vice versa.
+2.	Define Transit time.
+Transit time is the amount of time required for a message to travel from one device to another.
+3.	Define Response time.
+Response time is the elapsed time between an enquiry and a response.
+4.	What is meant by Frame?
+Frame is data that is transmitted between network points as a unit with addressing and Protocol Control Information.
+5.	Define Signalling.
+It is the physical propagation of the signal along a suitable medium.
+6.	List the Transmission Impairments.
+i.	Attenuation
+ii.	Delay Distortion
+iii.	Noise 
+7.	Define Noise.
+Any undesired signals are referred to as noise.
+8.	What is meant by Jitter?
+Jitter refers to the variation in the packet arrival time.
+CHAPTER- 2: DATA TRANSMISSION MEDIA
+1.	 Give some examples for Guided Transmission media.
+Twisted pair, Coaxial cable and Optical fibre.
+2.	Which is the least expensive Transmission media?
+Twisted Pair is the least expensive Transmission media.
+3.	What are the types of the Twisted Pair? 
+Unshielded twisted pair and Shielded twisted pair.
+4.	Glasses and Plastics can be used to make Optical Fibre.
+5.	In Optical Fibre, the core has a diameter in the rate of 8 to 100 µm.
+6.	Define Microwave Frequencies.
+Frequencies which are in the range of about 1 GHz to 40 GHz are referred to as Microwave Frequencies.
+7.	What do you mean by Antenna gain?
+It is a measure of the directionality of an Antenna.
+8.	Expand GPS.
+Global Positioning System.
+CHAPTER- 3: DATA ENCODING
+1.	Define Polar Signalling.
+In polar Signalling one logic state is represented by a positive voltage level and other by a negative voltage level. 
+2.	What is Data signalling Rate?
+This is the rate, data is transmitted in unit of bits per second (bps).
+3.	What do you mean by ‘Duration of length of bit’?
+It is the amount of time, a bit takes for transmission.
+4.	Mention various Encoding techniques for conversion of Digital Data to Digital Signals.
+i.	Non-Return to Zero (NRZ)
+ii.	Multilevel Binary
+iii.	Biphase
+5.	Define Quantization.
+Quantization is defined as the process of converting or representing the samples into digital form.
+6.	Name the encoding type for Wireless Communication.
+Spread Spectrum is an encoding form for Wireless Communication.
+7.	Expand DSSS.
+Direct Sequence Spread Spectrum.
+8.	Expand CDMA.
+Code Division Multiplexing Access. 
+CHAPTER- 4: DATA LINK CONTROL
+1.	List two types of parity check.
+i.	Odd Parity
+ii.	Even Parity.
+2.	Expand ARQ.
+Automatic Repeat Request.
+3.	What is the function of Primary station in HDLC?
+In HDLC Primary Station is responsible for controlling the operation of the link.
+4.	 Mention various types of Data transfer Modes.
+i.	Normal Response Mode (NRM)
+ii.	Asynchronous Balanced Mode (ABM)
+iii.	Asynchronous Response Mode (ARM).
+5.	Expand FCS, NRM, ABM, ARM and CRC
+FCS - Frame Check Sequence
+NRM - Normal Response Mode
+ABM - Asynchronous Balanced Mode
+ARM - Asynchronous Response Mode
+CRC- Cyclic Redundancy Check
+
+6.	Define flow control.
+Flow Control is a technique for assuring that a transmitting entity does not overcome a receiving entity.
+7.	Expand RR, RNR, REJ and SREJ.
+RR – Receiver Ready
+RNR – Receiver Not Ready
+REJ – Reject
+SREJ – Selective Reject
+8.	What is piggybacking?
+Each data frame includes a field that holds the sequence number of the frame and a field that holds the sequence number used for acknowledgement.
+CHAPTER- 5: MEDIUM ACCESS SUBLAYER 
+1.	ALOHA was developed for Packet Radio Networks.
+2.	What is meant by collision?
+If the frames transmitted, interfere with each other at the receiver so that neither gets through then, it is said to be collision. 
+3.	To improve efficiency, a modification of ALOHA known as Slotted ALOHA was developed.
+CHAPTER- 6: MULTIPLEXING
+1.	Define Multiplexing.
+Multiplexing is the set of techniques that allows the simultaneous transmission of multiple signals across a single data link.
+2.	Mention basic Multiplexing techniques.
+i.	Frequency Division Multiplexing (FDM)
+ii.	Wavelength Division Multiplexing (WDM)
+iii.	Time Division Multiplexing  (TDM)
+3.	Expand ISDN.
+Integrated Service Digital Network.
+4.	Name the two types of ISDN.
+i.	Basic Rate Interface (BRI)
+ii.	Primary Rate Interface (PRI).
+5.	Expand BRI and PRI
+BRI - Basic Rate Interface
+PRI - Primary Rate Interface.
+6.	Expand MUX and DEMUX
+MUX –Multiplexer DEMUX – Demultiplexer.
+CHAPTER- 7: SWITCHING
+1.	What are the methods used in switching?
+i.	Circuit Switching
+ii.	Packet Switching
+iii.	Message Switching
+2.	What are the phases in Circuit-switched network?
+i.	Setup Phase
+ii.	Data Transfer Phase
+iii.	Teardown Phase
+3.	Expand PCI.
+Protocol Control Information.
+
