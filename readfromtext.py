@@ -2,7 +2,7 @@ import re
 import string
 import os
 import glob
-
+from selenium import webdriver
 
 #cwd = os.getcwd()  # Get the current working directory (cwd)
 #files = os.listdir(cwd)  # Get all the files in that directory
@@ -128,30 +128,54 @@ for i in range(0,len(files)):
 
 #important ARRAYS FOR SEARCHING
 #actualfile wordsinfile noofoccurenceofwords afterremovingduplecates wordoccurenceandpos sortwithmaxwordoccurence
-query = "College shivamogga"
 
 
 
-querylist = query.split()
-#print("QUERRY LIST"+str(querylist))
-qurres = []
+browser = webdriver.Chrome()
+browser.get("file:///home/venkatram/PycharmProjects/invertedIndex/projecthtml/index.html")
+browser.maximize_window()
+querybox=browser.find_element_by_class_name('button')
+check=browser.find_element_by_id('check')
 
-for s in range(0,len(querylist)):
-    insertonce = False
-    for j in range(0,len(files)):
-        for i in range(0,len(wordoccurenceandpos[j]),3):
-            if wordoccurenceandpos[j][i] == querylist[s]:
-                if(insertonce == False):
-                    insertonce = True
-                    qurres.append(wordoccurenceandpos[j][i])
-                qurres.append("document"+str(j+1))
-                qurres.append(wordoccurenceandpos[j][i+1])
-                qurres.append(wordoccurenceandpos[j][i+2])
-print(qurres)
+query=''
+def getquery():
+    print("\n\nquery is"+query)
+    check.clear()
+    check.send_keys('false')
+    querylist = query.split()
+    # print("QUERRY LIST"+str(querylist))
+    qurres = []
+
+    for s in range(0, len(querylist)):
+        insertonce = False
+        for j in range(0, len(files)):
+            for i in range(0, len(wordoccurenceandpos[j]), 3):
+                if wordoccurenceandpos[j][i] == querylist[s]:
+                    if (insertonce == False):
+                        insertonce = True
+                        qurres.append(wordoccurenceandpos[j][i])
+                    qurres.append("document" + str(j + 1))
+                    qurres.append(wordoccurenceandpos[j][i + 1])
+                    qurres.append(wordoccurenceandpos[j][i + 2])
+    print(qurres)
+
+#SEND QUERY INFORMATION FROM HERE
+
+
+
+while True:
+    if(check.get_attribute('value')=='true'):
+        query=querybox.get_attribute('value')
+        getquery()
+
+
+
+
+
+#query = "College shivamogga"
+
 
 #read querry from file
 
-with open(cwd+"/htmlresult.txt", 'r') as myfile:
-    data = myfile.read()
-print(data)
+
 
