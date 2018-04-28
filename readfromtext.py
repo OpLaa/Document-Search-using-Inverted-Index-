@@ -16,6 +16,10 @@ for i in os.listdir(cwd):
     if i.endswith('.txt'):
         files.append(i)
 #print(files)
+
+totalfiles=len(files)
+retrivedfiles=[]
+
 actualfile = []
 wordsinfile = []
 noofoccurenceofwords = []
@@ -29,6 +33,7 @@ for i in range(0,len(files)):
 
     with open(files[i], 'r') as myfile:
         data=myfile.read().replace('\n', " ")
+
         data.replace(':',"")
         data.replace('-'," ")
     print(data)
@@ -36,8 +41,12 @@ for i in range(0,len(files)):
 
 
     arra1 = re.sub('['+string.punctuation+']', '', data).split()
+    arra1 = [element.lower() for element in arra1];
     #print(arra1)
 
+
+    #converting to lowercase
+    #map(str.lower, arra1)
 
     print("\n\n\nTOTAL NO OF WORDS EXTRACTED IN THE FILE  :"+str(len(arra1)))
     wordsinfile.insert(i,len(arra1))
@@ -133,21 +142,23 @@ for i in range(0,len(files)):
 
 browser = webdriver.Chrome()
 browser.get("file:///home/venkatram/PycharmProjects/invertedIndex/projecthtml/index.html")
-browser.maximize_window()
-querybox=browser.find_element_by_class_name('button')
+#browser.maximize_window()
+querybox=browser.find_element_by_id('querybox')
 check=browser.find_element_by_id('check')
+resultbox=browser.find_element_by_id('resultbox')
 
 query=''
 def getquery():
-    print("\n\nquery is"+query)
+    print("\n\nquery is :"+query)
     check.clear()
     check.send_keys('false')
     querylist = query.split()
     # print("QUERRY LIST"+str(querylist))
     qurres = []
-
+    qurresfinal= []
     for s in range(0, len(querylist)):
         insertonce = False
+        qurres=[]
         for j in range(0, len(files)):
             for i in range(0, len(wordoccurenceandpos[j]), 3):
                 if wordoccurenceandpos[j][i] == querylist[s]:
@@ -155,9 +166,19 @@ def getquery():
                         insertonce = True
                         qurres.append(wordoccurenceandpos[j][i])
                     qurres.append("document" + str(j + 1))
+                    retrivedfiles.append("document" + str(j + 1))
                     qurres.append(wordoccurenceandpos[j][i + 1])
                     qurres.append(wordoccurenceandpos[j][i + 2])
+        qurresfinal.insert(s,qurres)
     print(qurres)
+    print(qurresfinal)
+
+
+
+
+    sendtoresultbox=','.join(str(e) for e in qurresfinal)
+    resultbox.clear()
+    resultbox.send_keys(sendtoresultbox)
 
 #SEND QUERY INFORMATION FROM HERE
 
@@ -174,8 +195,6 @@ while True:
 
 #query = "College shivamogga"
 
-
 #read querry from file
-
 
 
