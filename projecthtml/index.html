@@ -7,19 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel='stylesheet prefetch' href='css/aaa.css'>
-
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/webbutton.css">
   <style type="text/css">
     #clear
     {
     position : absolute;
     top : 200px;
-    left : 610px;
+    left : 590px;
     }
-
+    #resultbox{width:450px;height:250px;}
   </style>
+<script>
+    function draw() {
+        /* Accepting and seperating comma seperated values */
 
-  
+        var n = document.getElementById("num").value;
+        var values = n.split(',');
+      }
+</script>
 </head>
 
 <body>
@@ -32,13 +38,19 @@
   <br>
   <br>
   <br>
-  <input class="button" placeholder="Search..." />
-<b><input type="button" value="Go"></b>
-    <input id="clear" type="button"value="Clear">
-<script src='bbb.js'></script>
+    <input type="text" id="querybox" placeholder="Search..." />  <!-- SEARCH TEXT BOX-->
 
-  
+    <b><input type="button" class="go" value="Search" onclick="document.getElementById('check').value='true'"></b></div><!-- SEARCH BUTTON-->
 
+    <input id="clear" class="go" type="button" value="Clear"  onclick="document.getElementById('querybox').value=''"> <!-- CLEAR BUTTON-->
+    <input type="text" value="false" id="check" > <!-- TEXT PRESENCE CHECK TEXTBOX-->
+
+    <input type="text" value="" id="resultbox" > <!--RESULT TEXT BOX -->
+
+
+
+
+    <script src='bbb.js'></script>
 </body>
 
 </html>

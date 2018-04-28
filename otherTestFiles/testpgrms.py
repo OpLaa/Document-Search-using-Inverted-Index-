@@ -17,7 +17,13 @@ x="i am an idiot fellow-how are you"
 a=x.split('-')
 print(a)
 
-cwd = os.getcwd()  # Get the current working directory (cwd)
+cwd = os.getcwd()# Get the current working directory (cwd)
+cwd=cwd+'/dataset'
+print("CURRENT WORKING DIRRECTORY"+cwd)
+
+
+
+
 files = []
 
 print("CURRENT WORKING DIRECTORY\n\n" + str(cwd))
@@ -47,6 +53,31 @@ for i in range(0,len(a),3):
         qurres.append(a[i+2])
 print(qurres)
 
+
+list1 = ['1', '2', '3']
+str1 = ','.join(list1)
+print(str1)
+
+
+
+query="College shivamogga"
+word="i"
+resultindex=['College', 'document1', 3, [13, 14, 15], 'document2', 3, [31, 39, 55], 'document3', 1, [1], 'shivamogga', 'document1', 3, [16, 17, 25], 'document2', 3, [22, 32, 44], 'i', 'document1', 2, [3, 18], 'am', 'document1', 2, [4, 19]]
+querylist=query.split()
+
+indexword=[]
+
+index=resultindex.index(word)+1
+indexword.append(word)
+for i in range(index,len(resultindex)):
+    if resultindex[i] in querylist:
+        break
+    else:
+        indexword.append(resultindex[i])
+
+print(indexword)
+print(index)
+print('after printing')
 
 
 

@@ -9,7 +9,8 @@ from selenium import webdriver
 #print("Files in '%s': %s" % (cwd, files))
 
 #getting all files from folder to a array
-cwd = os.getcwd()  # Get the current working directory (cwd)
+cwd = os.getcwd()# Get the current working directory (cwd)
+cwd=cwd+"/dataset/" #adding exact location
 files = []
 #print(cwd)
 for i in os.listdir(cwd):
@@ -31,7 +32,7 @@ for i in range(0,len(files)):
     print("DOCUMENT "+str(i+1)+"\n\n\n\n\n")
     print("\n\n\n\nREADING DATA FROM FILE\n")
 
-    with open(files[i], 'r') as myfile:
+    with open(cwd+files[i], 'r') as myfile:
         data=myfile.read().replace('\n', " ")
 
         data.replace(':',"")
@@ -165,8 +166,8 @@ def getquery():
                     if (insertonce == False):
                         insertonce = True
                         qurres.append(wordoccurenceandpos[j][i])
-                    qurres.append("document" + str(j + 1))
-                    retrivedfiles.append("document" + str(j + 1))
+                    qurres.append(" " + files[j]+"")
+                    retrivedfiles.append(" " + files[j]+"")
                     qurres.append(wordoccurenceandpos[j][i + 1])
                     qurres.append(wordoccurenceandpos[j][i + 2])
         qurresfinal.insert(s,qurres)
